@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAEAPP.Views.ESAE.AboutPage"
+             Title="Escola Superior de Altos Estudos">
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <Image AbsoluteLayout.LayoutFlags="All"
+                       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                       Margin="0,0,0,5"
+                       Source="esaebanner.png"
+                       Aspect="AspectFill"/>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Apresentação" FontSize="Large" TextColor="#ec672f" FontAttributes="Bold" Margin="10,20,0,5"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="A Escola Superior de Altos Estudos (ESAE) é o Departamento que congrega toda a formação pós-graduada da Instituição: cursos de Pós-Graduação e cursos de 2º Ciclo / Mestrados."/>
+                            <Label Text="A ESAE, através da sua equipa e de uma estreita colaboração com as Coordenações dos vários cursos, acompanha a formação dos estudantes:"/>
+                            <Label Margin="10,0,0,0" Text="• Apoiando a sua integração"/>
+                            <Label Margin="10,0,0,0" Text="• Contribuindo para o sucesso das atividades formativas."/>
+                            <Label Text="Da ESAE faz parte a Comissão Científico-Pedagógica dos cursos de 2º Ciclo, formada pelo Presidente do Conselho Científico e pelos Coordenadores dos cursos de 2º Ciclo. Nas suas reuniões reflete-se sobre a política científica da Instituição e promovem-se colóquios e / ou outros eventos de caráter científico, destinados à formação dos estudantes e a dar a conhecer ao exterior a sua produção científica."/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Equipa" FontSize="Large" TextColor="#ec672f" FontAttributes="Bold" Margin="10,20,0,5"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Coordenação da ESAE:"/>
+                            <Label Margin="10,0,0,0" Text="Coordenadora: Profª Doutora Margarida Couto"/>
+                            <Label Margin="10,0,0,0" Text="Vice Coordenadora: Mestre Maria Pinto"/>
+                            <Label Margin="10,0,0,10" Text="Email: coordenacaoesae@ismt.pt"/>
+                            <Label Text="Secretariado:"/>
+                            <Label Margin="10,0,0,0" Text="Secretária Executiva - Drª Alexandra Damas ( alexandra@ismt.pt )"/>
+                            <Label Margin="10,0,0,0" Text="Elisabete Marques ( elisabete@ismt.pt )"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

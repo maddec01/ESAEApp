@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAEAPP.Views.Eventos.EventosListPage"
+             Title="Eventos">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Margin="0,0,0,5"
+                   Source="esaebanner.png"
+                   Aspect="AspectFill"/>
+            <Label Text="Eventos" FontSize="Large" TextColor="#ec672f" FontAttributes="Bold" Margin="10,20,0,5"/>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <ListView x:Name="eventosListView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" RowHeight="80">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10,5,10,5" RowSpacing="0" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" FontAttributes="Bold" Text="{Binding titleEvento}" VerticalOptions="FillAndExpand" />
+                                    <Label Grid.Row="1" Text="{Binding diaEvento}" TextColor="#ec672f" HorizontalTextAlignment="End" FontSize="Small" VerticalOptions="FillAndExpand" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAEAPP.Views.WelcomePage"
+             Title="ISMT - Escola Supeior de Altos Estudos">
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Image AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+               Source="backgroundesae.png"
+               Aspect="AspectFill"/>
+        <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <Image AbsoluteLayout.LayoutFlags="All"
+                       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                       Margin="0,100,0,20"
+                       Source="ismtbanner.png"
+                       Aspect="AspectFill"/>
+
+            <Frame Margin="0,80,0,60" BackgroundColor="#ec672f">
+                <StackLayout>
+                    <Label Text="Bem vindo à aplicação mobile da Escola Superior de Altos Estudos do ISMT." TextColor="White"/>
+                    <Label Text="Se for aluno pode fazer login no botão em baixo para consultar os seus dados pessoais." TextColor="White"/>
+                </StackLayout>
+            </Frame>
+
+            <Button Text="Login Alunos"
+                    FontSize="Large"
+                    x:Name="LoginBtn"
+                    Clicked="LoginBtn_Clicked"
+                    BackgroundColor="White"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    />
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

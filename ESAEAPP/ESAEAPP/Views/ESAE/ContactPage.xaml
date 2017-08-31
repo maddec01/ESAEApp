@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAEAPP.Views.ESAE.ContactPage"
+             Title="Contactos">
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <Image AbsoluteLayout.LayoutFlags="All"
+                       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                       Margin="0,0,0,5"
+                       Source="esaebanner.png"
+                       Aspect="AspectFill"/>
+
+            <ScrollView>
+                <StackLayout>
+                    <!--<Label Text="Linha de Apoio" FontSize="Large" TextColor="#ec672f" FontAttributes="Bold" Margin="10,20,0,5"/>-->
+                    <Button Text="Linha de apoio"
+                            Margin="50,20,50,0"
+                            BackgroundColor="#ec672f"
+                            TextColor="White"
+                            x:Name="LinhaApoioBtn"
+                            Clicked="LinhaApoioBtn_Clicked"/>
+                    <Label Text="Secretariado (ESAE)" FontSize="Large" TextColor="#ec672f" FontAttributes="Bold" Margin="10,20,0,5"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Telefone: (+351) 239 488 043/44"/>
+                            <Label Text="E-mail: esae@ismt.pt "/>
+                            <Label Text="Página Web: www.ismt.pt"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Envio de correspondência" FontSize="Large" TextColor="#ec672f" FontAttributes="Bold" Margin="10,20,0,5"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Instituto Superior Miguel Torga"/>
+                            <Label Text="Escola Superior de Altos Estudos (ESAE)"/>
+                            <Label Text="Largo da Cruz de Celas, 1"/>
+                            <Label Text="3000-132 Coimbra"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

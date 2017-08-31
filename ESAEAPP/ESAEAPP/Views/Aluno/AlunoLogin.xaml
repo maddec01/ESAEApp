@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAEAPP.Views.Aluno.AlunoLogin"
+             Title="Login">
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <Image AbsoluteLayout.LayoutFlags="All"
+                       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                       Margin="0,0,0,60"
+                       Source="ismtbanner.png"
+                       Aspect="AspectFill"/>
+            
+            <Label Text="Login" 
+                   Margin="85,10,80,0"
+                   TextColor="Black" 
+                   FontSize="Medium" 
+                   FontAttributes="Bold" />
+
+            <Entry Placeholder="Número de aluno" 
+                   Margin="80,5,80,10" 
+                   FontSize="Small"/>
+
+            <Entry IsPassword="True" 
+                   Placeholder="******" 
+                   Margin="80,10,80,10" 
+                   FontSize="Small"/>
+
+            <Button Text="Entrar"
+                    BackgroundColor="White"
+                    x:Name="BtnLog"
+                    Margin="100,0,100,0"
+                    />
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

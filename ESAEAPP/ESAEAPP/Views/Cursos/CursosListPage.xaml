@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAEAPP.Views.Cursos.CursosListPage"
+             Title="Cursos">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Margin="0,0,0,5"
+                   Source="esaebanner.png"
+                   Aspect="AspectFill"/>
+            <Label Text="Cursos" FontSize="Large" TextColor="#ec672f" FontAttributes="Bold" Margin="10,20,0,5"/>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <ListView x:Name="cursosListView" VerticalOptions="FillAndExpand" SeparatorVisibility="None" RowHeight="60">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="15,10" RowSpacing="20">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label FontAttributes="Bold" Text="{Binding nameCurso}" VerticalOptions="FillAndExpand" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

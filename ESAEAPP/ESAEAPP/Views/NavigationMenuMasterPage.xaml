@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAEAPP.Views.NavigationMenuMasterPage"
+             Padding="0,0,0,0"
+             Title="Navigation drawer"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout BackgroundColor="#007775" Margin="0,0,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Grid.Row="0" Grid.Column="0" Padding="20,20,20,20">
+                <Label Text="ESAE" XAlign="Start" FontSize="Large" TextColor="White" FontAttributes="Bold"/>
+                <Label Text="Escola Superior de Altos Estudos" XAlign="Start" FontSize="Small" TextColor="White"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Grid.Row="1" Grid.Column="0" Padding="0,20,0,20">
+                <ListView x:Name="menuListView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="5,10" RowSpacing="20">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"/>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding IconSource}" />
+                                    <Label Grid.Column="1" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="FillAndExpand" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>
