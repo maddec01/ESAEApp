@@ -24,9 +24,10 @@ namespace ESAEAPP.Views
             //add items to menu list
             masterPageItems.Add(new MasterPageItem
             {
-                Title = "LOGIN",
+                Title = "Perfil",
                 IconSource = "user.png"
             });
+            
 
             masterPageItems.Add(new MasterPageItem
             {

@@ -35,3 +35,4 @@ C:\Users\pedro\Desktop\ESAEAPP\ESAEAPP\ESAEAPP\obj\Debug\ESAEAPP.csproj.App.conf
 C:\Users\pedro\Desktop\ESAEAPP\ESAEAPP\ESAEAPP\bin\Debug\Newtonsoft.Json.dll
 C:\Users\pedro\Desktop\ESAEAPP\ESAEAPP\ESAEAPP\bin\Debug\Newtonsoft.Json.xml
 C:\Users\pedro\Desktop\ESAEAPP\ESAEAPP\ESAEAPP\obj\Debug\ESAEAPP.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\ESAEAPP\ESAEAPP\ESAEAPP\obj\Debug\ESAEAPP.Views.Aluno.AlunoPerfil.xaml.g.cs

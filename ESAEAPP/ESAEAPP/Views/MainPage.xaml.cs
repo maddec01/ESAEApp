@@ -36,9 +36,13 @@ namespace ESAEAPP.Views
                 // clean stack
                 _navPage.Navigation.PopAsync();
 
-                if (item.Title == "LOGIN")
+                if (item.Title == "Perfil")
                 {
-                    _navPage.PushAsync(new Aluno.AlunoLogin());
+                    if (GlobalVariables.AlunoIsLoged)
+                    {
+                        _navPage.PushAsync(new Aluno.AlunoPerfil());
+                    }
+                    else _navPage.PushAsync(new Aluno.AlunoLogin());
                 }
 
                 else if (item.Title == "ESAE")
@@ -66,7 +70,7 @@ namespace ESAEAPP.Views
                     _navPage.PushAsync(new ESAE.ContactPage());
                 }
             }
-
+            
             masterPage.MenuListView.SelectedItem = null;
             IsPresented = false;
         }

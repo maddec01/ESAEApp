@@ -29,6 +29,7 @@
             <Button Text="Entrar"
                     BackgroundColor="White"
                     x:Name="BtnLog"
+                    Clicked="BtnLog_Clicked"
                     Margin="100,0,100,0"
                     />
         </StackLayout>

@@ -1,4 +1,5 @@
 ﻿using ESAEAPP.API;
+using ESAEAPP.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +19,10 @@ namespace ESAEAPP.Views.Aluno
             InitializeComponent();
         }
 
-        private void clickedLogin(object sender, EventArgs e)
+        private void BtnLog_Clicked(object sender, EventArgs e)
         {
-            
+            GlobalVariables.AlunoIsLoged = true;
+            Navigation.PushAsync(new AlunoPerfil());
         }
     }
 }
