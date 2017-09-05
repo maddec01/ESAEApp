@@ -11,6 +11,7 @@ namespace ESAEAPP.Models
         public int idAviso { get; set; }
         public string titleAviso { get; set; }
         public string cursoAviso { get; set; }
+        public string cursoIdAviso { get; set; }
         public string textAviso { get; set; }
     }
 }
