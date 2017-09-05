@@ -1,10 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ESAEAPP.Views.Aluno.AlunoPerfil">
+             x:Class="ESAEAPP.Views.Aluno.AlunoPerfil"
+             Title="Perfil">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
-        </StackLayout>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout BackgroundColor="#ec672f" Grid.Column="0" Padding="15,15,15,15">
+                <Label Text="Pedro Gomes" FontSize="Large" TextColor="White" FontAttributes="Bold"/>
+                <Label Text="Multimédia" FontSize="Small" TextColor="White"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#ec672f" Grid.Column="1" Padding="15,15,15,15">
+                <Button Text="Logout"
+                        x:Name="BtnLogout"
+                        Clicked="BtnLogout_Clicked"
+                        BackgroundColor="White"/>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

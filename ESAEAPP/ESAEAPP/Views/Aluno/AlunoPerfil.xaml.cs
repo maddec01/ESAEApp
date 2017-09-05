@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ESAEAPP.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace ESAEAPP.Views.Aluno
         public AlunoPerfil()
         {
             InitializeComponent();
+        }
+
+        private void BtnLogout_Clicked(object sender, EventArgs e)
+        {
+            GlobalVariables.AlunoIsLoged = false;
+            Navigation.PushAsync(new AlunoLogin());
         }
     }
 }
