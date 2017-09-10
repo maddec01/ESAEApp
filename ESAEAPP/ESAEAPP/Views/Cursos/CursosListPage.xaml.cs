@@ -27,6 +27,7 @@ namespace ESAEAPP.Views.Cursos
             cursosListView.ItemTapped += async (sender, e) => {
                 var item = e.Item as Curso;
 
+                //send object to new page
                 await Navigation.PushAsync(new CursoPage(item));
 
                 cursosListView.SelectedItem = null;

@@ -19,6 +19,7 @@ namespace ESAEAPP.Views.ESAE
 
         private void LinhaApoioBtn_Clicked(object sender, EventArgs e)
         {
+            //Open phone app
             Device.OpenUri(new Uri("tel://808208030"));
         }
     }

@@ -27,6 +27,7 @@ namespace ESAEAPP.Views.Eventos
             eventosListView.ItemTapped += async (sender, e) => {
                 var item = e.Item as Evento;
 
+                //send object to new page
                 await Navigation.PushAsync(new EventoPage(item));
 
                 eventosListView.SelectedItem = null;

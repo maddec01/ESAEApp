@@ -27,6 +27,7 @@ namespace ESAEAPP.Views.Avisos
             avisosListView.ItemTapped += async (sender, e) => {
                 var item = e.Item as Aviso;
 
+                //send object to new page
                 await Navigation.PushAsync(new AvisoPage(item));
 
                 avisosListView.SelectedItem = null;
